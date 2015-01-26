@@ -7,7 +7,9 @@ if __name__ == '__main__':
     s = socket.socket()         # Create a socket object
     s.connect((host, port))
     print "Connect to ", (host, port)
-    with open('receive.pdf', 'w') as f:
+
+    filename = "receive_" + s.recv(1024)
+    with open(filename, 'w') as f:
         temp = s.recv(1024)
         while temp:
             f.write(temp)

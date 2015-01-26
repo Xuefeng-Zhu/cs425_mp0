@@ -7,7 +7,6 @@ Usage:
 
 Options:
   -h --help     Show this screen.
-  --version     Show version.
 """
 
 import socket               # Import socket module
@@ -29,11 +28,14 @@ if __name__ == '__main__':
     s.bind((host, port))        # Bind to the port
     s.listen(5)                 # Now wait for client connection.
     print "Wating for client..."
+
     while True:
         c, addr = s.accept()     # Establish connection with client.
         print 'Got connection from', addr
+
         c.sendall(filename)
         f = open(filename)
         c.sendall(f.read())
         print "File sent"
+        
         c.close()                # Close the connection

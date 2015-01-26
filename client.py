@@ -2,6 +2,7 @@
 Simple TCP Client
 
 Usage:
+  client.py
   client.py [<host>] [<port>]
   server.py (-h | --help)
 

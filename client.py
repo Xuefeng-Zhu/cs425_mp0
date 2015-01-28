@@ -4,7 +4,7 @@ Simple TCP Client
 Usage:
   client.py
   client.py [<host>] [<port>]
-  server.py (-h | --help)
+  client.py (-h | --help)
 
 Options:
   -h --help     Show this screen.

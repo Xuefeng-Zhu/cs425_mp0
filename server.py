@@ -37,5 +37,5 @@ if __name__ == '__main__':
         f = open(filename)
         c.sendall(f.read())
         print "File sent"
-        
+
         c.close()                # Close the connection

@@ -1,5 +1,5 @@
 """
-Simple UDP listener 
+Simple UDP listener
 
 Usage:
   listener.py

@@ -2,7 +2,7 @@
 Simple TCP Server
 
 Usage:
-  server.py <filename> [<host>] [<port>]
+  server.py <filename> [<port>]
   server.py (-h | --help)
 
 Options:
@@ -19,8 +19,6 @@ filename = 'send.pdf'
 if __name__ == '__main__':
     arguments = docopt(__doc__, options_first=True)
     filename = arguments['<filename>']
-    if arguments['<host>']:
-        host = arguments['<host>']
     if arguments['<port>']:
         port = arguments['<port>']
 
